@@ -1,13 +1,57 @@
 /**
- * @name itachi4k
+ * @name Itachi 4K
  * @author Request
- * @version auto updates
- * @description Theme was created in generator https://vsthemes.org/generator/
- * @source https://vsthemes.org/en/skins/discord/28667-itachi4k.html
- * @authorLink https://vsthemes.org/user/Request/
- * @authorId 2
-*/
-@import url(https://vsthemes.org/uploads/generator/client/BasicBackground.css);
+ * @version 1.0.0
+ * @description Custom Itachi 4K Discord Theme hosted on GitHub (Full standalone version)
+ * @source https://github.com/YourUserName/DiscordTheme-Itachi4K
+ */
+
+/* ========== [Basic Background CSS - Local Copy] ========== */
+.theme-dark, .theme-light {
+    --font-primary: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-code: Consolas, "Courier New", Courier, monospace;
+}
+
+.appMount-2yBXZl {
+    background-color: var(--backdrop, rgba(0, 0, 0, 0.2)) !important;
+    background-image: var(--background) !important;
+    background-size: var(--backgroundsize, cover) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Transparency layers */
+.container-2cd8Mz,
+.container-1NXEtd,
+.chat-2ZfjoI,
+.sidebar-1tnWFu,
+.content-1SgpWY {
+    background: rgba(var(--transparencycolor, 0,0,0), var(--transparencyalpha, 0.2)) !important;
+    backdrop-filter: blur(var(--backgroundblur, 5px)) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--accentcolor, 255,255,255), 0.4) !important;
+    border-radius: 10px !important;
+}
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+/* Popouts & Menus */
+.layerContainer-2lfOPe,
+.popouts-3dRSmE {
+    background: rgba(var(--transparencycolor, 0,0,0), var(--popoutblur, 0.3)) !important;
+    backdrop-filter: blur(var(--popoutblur, 10px)) !important;
+}
+
+/* ========== [Custom Itachi Theme Variables] ========== */
 :root {
     --transparencycolor: 112,0,0;
     --transparencyalpha: 0.05;
@@ -17,10 +61,9 @@
     --accentcolor: 238,0,0;
     --background: url("https://vsthemes.org/uploads/posts/2021-03/1616187681_naruto-akatsuki-itachi-uchiha.webp");
     --backdrop: rgba(0,0,0,0.2);
-    --backgroundblur: 0px;
-    --popoutblur: 0px;
-    --backdropblur: 0px;
-    --version1_0_5:none;
+    --backgroundblur: 5px;
+    --popoutblur: 8px;
+    --backdropblur: 4px;
     --backgroundsize: cover;
     --popoutsize: cover;
     --backdropsize: cover;
